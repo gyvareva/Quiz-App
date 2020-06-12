@@ -116,7 +116,8 @@ form {
 
 input {
     margin-bottom: 1rem;
-    width: 20rem;
+    height: 30rem;
+    width: 50rem;
     padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
