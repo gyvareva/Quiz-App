@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Import</title>
     <link rel="stylesheet" href="./app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 <script src="./csvtools.js"></script>
 <script src="./import.js"></script>
     <div class="container">
         <div id="" class="flex-center flex-column">
-            <input type="text" name="csvinput" id="csvinput">
-            <!-- <button onclick="maConversion()">Convertir en JSON</button>
-            <button onclick="testConversion()">Convertir en JSON</button> -->
-            <button onclick="csvtoJSON(csvinput)">Convertir en JSON</button>
-               
-            <input type="text" name="jsonoutput" id="jsonoutput">
-                </div>
+            <button onclick="initTest()">Init Dataset</button>
+            <textarea name="csvinput" id="csvinput" class="textarea-size"></textarea>
+            
+            <div>   
+                <label >Séparateur</label>
+                <input id="separatorChar" type="text" value=";" style="height: 20px;">
+            </div>
+            
+            <button onclick="gererConversionCsv()">Convertir en JSON</button>            
+            <textarea name="jsonoutput" id="jsonoutput" class="textarea-size"></textarea>
+        </div>
     </div>
 
 
-<!--
-<script src="./essaiconversion.js"></script> -->
 </body>
 </html>

@@ -127,3 +127,13 @@ input {
 input::placeholder {
     color: #aaa;
 }
+
+.red-border{
+    border: 2px solid red;
+}
+
+.textarea-size{
+    height: 350px;
+    width: 100%;
+}
+
