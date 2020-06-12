@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,26 @@
     <link rel="stylesheet" href="./app.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
-<script src="./csvtools.js"></script>
-<script src="./import.js"></script>
+    <script src="./csvtools.js"></script>
+    <script src="./import.js"></script>
     <div class="container">
         <div id="" class="flex-center flex-column">
             <button onclick="initTest()">Init Dataset</button>
             <textarea name="csvinput" id="csvinput" class="textarea-size"></textarea>
-            
-            <div>   
-                <label >Séparateur</label>
+
+            <div>
+                <label>Séparateur</label>
                 <input id="separatorChar" type="text" value=";" style="height: 20px;">
             </div>
-            
-            <button onclick="gererConversionCsv()">Convertir en JSON</button>            
+
+            <button onclick="gererConversionCsv()">Convertir en JSON</button>
             <textarea name="jsonoutput" id="jsonoutput" class="textarea-size"></textarea>
         </div>
     </div>
 
 
 </body>
+
 </html>
