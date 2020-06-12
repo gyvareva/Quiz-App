@@ -1,16 +1,16 @@
 //var csv is the CSV file with headers
-function csvtoJSON(csv){
+function csvtoJSON(csv, separator){
 
     var lines=csv.split("\n");
   
     var result = [];
   
-    var headers=lines[0].split(",");
+    var headers=lines[0].split(separator);
   
     for(var i=1;i<lines.length;i++){
   
         var obj = {};
-        var currentline=lines[i].split(",");
+        var currentline=lines[i].split(separator);
   
         for(var j=0;j<headers.length;j++){
             obj[headers[j]] = currentline[j];
@@ -21,5 +21,5 @@ function csvtoJSON(csv){
     }
     
     //return result; //JavaScript object
-    return JSON.stringify(result); //JSON
+    return JSON.stringify(result, null, ' '); //JSON
   };
