@@ -127,3 +127,20 @@ input {
 input::placeholder {
     color: #aaa;
 }
+
+.red-border{
+    border: 2px solid red;
+}
+
+.textarea-size{
+    height: 350px;
+    width: 100%;
+}
+
+.backoffice-link{
+    position: absolute; 
+    bottom: 10px;
+    right : 10px;
+    opacity: 50%;
+}
+
