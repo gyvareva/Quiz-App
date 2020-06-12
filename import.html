@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Import</title>
     <link rel="stylesheet" href="./app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
 <script src="./csvtools.js"></script>
 <script src="./import.js"></script>
+<script src="./testJSONData.js"></script>
     <div class="container">
         <div id="" class="flex-center flex-column">
-            <input type="text" name="csvinput" id="csvinput">
-            <!-- <button onclick="maConversion()">Convertir en JSON</button>
-            <button onclick="testConversion()">Convertir en JSON</button> -->
-            <button onclick="csvtoJSON(csvinput)">Convertir en JSON</button>
-               
-            <input type="text" name="jsonoutput" id="jsonoutput">
-                </div>
+
+            <button onclick="testeurJSON()">Testing</button>
+
+            <textarea type="text" name="csvinput" id="csvinput" style="width: 50rem; height: 30rem; padding-bottom: 10rem;"></textarea>
+
+            <div class="flex-center flex-row">
+                <button onclick="maConversion()">Convertir en JSON</button>
+                <input type="text" name="separator" id="separator">
+            </div>
+            
+            <textarea type="text" name="jsonoutput" id="jsonoutput" style="width: 50rem; height: 30rem;"></textarea>
+            <a href="./index.html" class="btn">Accueil</a>
+        </div>
+            
     </div>
 
-
-<!--
-<script src="./essaiconversion.js"></script> -->
 </body>
 </html>

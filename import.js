@@ -1,10 +1,13 @@
-var csvinput = document.getElementById('csvinput').value;
-var jsonoutput = document.getElementById('jsonoutput').value;
-console.log(csvinput);
-console.log(jsonoutput);
+function maConversion(){
+    document.getElementById('csvinput').classList.remove("red-border");
 
-parse.csvinput;
+    var csvinput = document.getElementById('csvinput');
+    var jsonoutput = document.getElementById('jsonoutput');
+    
+    if(csvinput.value.length == 0){
+        document.getElementById('csvinput').classList.add("red-border");
+    }
 
-jsonoutput = csvtoJSON(csvinput);
-console.log(jsonoutput);
-//document.getElementById('csvinput').json2csv.toJSON = output;
+    jsonoutput.value = csvtoJSON(csvinput.value);
+
+}
