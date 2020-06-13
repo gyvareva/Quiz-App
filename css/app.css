@@ -130,3 +130,17 @@ input::placeholder {
 .red-border {
     border: 3px red solid;
 }
+
+.backoffice-link{
+    position: absolute; 
+    bottom: 10px;
+    right : 10px;
+    opacity: 50%;
+}
+
+.qr-link{
+    position: absolute; 
+    bottom: 10px;
+    left : 10px;
+    opacity: 50%;
+}
