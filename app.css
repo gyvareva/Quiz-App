@@ -144,3 +144,9 @@ input::placeholder {
     opacity: 50%;
 }
 
+.qr-link{
+    position: absolute; 
+    bottom: 10px;
+    left : 10px;
+    opacity: 50%;
+}
