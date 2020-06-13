@@ -1,4 +1,4 @@
-Access content <a href='http://www.gyvareva.github.io/Quiz-App'>here</a>.
+Access content <a href='https://www.gyvareva.github.io/Quiz-App'>here</a>.
 
 An app for physiotherapy students during their training period in the pneumology ward at Pontchaillou hospital, Rennes, France.
 The goals are to :
