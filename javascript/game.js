@@ -58,16 +58,13 @@ function validerReponse() {
         }
         */
        
-       if (stillOk ==='true') {
-           incrementScore(CORRECT_BONUS);
-        }
-        
-        var classToApply;
-        
-        if (choiceCard.classList.contains("selected-answer") && choiceCard.classList.contains("is-correct-answer")) {
-            classToApply = "correct";
-            choiceCard.classList.remove("selected-answer");
-            choiceCard.classList.add(classToApply);
+       
+       var classToApply;
+       
+       if (choiceCard.classList.contains("selected-answer") && choiceCard.classList.contains("is-correct-answer")) {
+           classToApply = "correct";
+           choiceCard.classList.remove("selected-answer");
+           choiceCard.classList.add(classToApply);
         } else if(choiceCard.classList.contains("selected-answer") && !choiceCard.classList.contains("is-correct-answer")) {
             classToApply = "incorrect";
             choiceCard.classList.remove("selected-answer");
@@ -77,10 +74,16 @@ function validerReponse() {
             choiceCard.classList.remove("selected-answer");
             choiceCard.classList.add(classToApply);
         }
+        choice.parentElement.classList.remove("is-correct-answer");
     });
     
-    console.log(stillOk? 'Bravo!':'Au moins 1 réponse est fausse...');
+    if (stillOk) {
+        incrementScore(CORRECT_BONUS);
+     }
 
+    console.log(stillOk? 'Bravo!':'Au moins 1 réponse est fausse...');
+    document.getElementById("submit-button").style.visibility = "hidden";
+    document.getElementById("next-question-button").style.visibility = "visible";
 
 }
 
@@ -112,6 +115,12 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
+    cleanChoicesCSS();
+
+    document.getElementById("submit-button").style.visibility = "visible";
+    document.getElementById("next-question-button").style.visibility = "invisible";
+
+
     if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         // Go to the end page
@@ -162,15 +171,6 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         selectedChoice.parentElement.classList.toggle("selected-answer");
 
-        //selectedChoice.parentElement.classList.add(classToApply);
-
-        // setTimeout( () => {
-        //     selectedChoice.parentElement.classList.remove(classToApply);
-        //     getNewQuestion();
-        // }, 1000);
-
-    
-        
     });
 });
 
