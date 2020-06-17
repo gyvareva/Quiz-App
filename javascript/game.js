@@ -33,6 +33,75 @@ fetch("data/questions.json")
 const CORRECT_BONUS = 10; //if you get an answer correct, how much is it worth
 const MAX_QUESTIONS = 3; //how many questions does an user get before the game ends
 
+function validerReponse() {
+    var stillOk = true;
+    cleanValidationCSS();
+    choices.forEach(choice => {
+        var choiceCard = choice.parentElement;
+        var isSelectedAnswer = choiceCard.classList.contains("selected-answer");
+        var isCorrect = choiceCard.classList.contains("is-correct-answer");
+        
+
+        if ((isSelectedAnswer == true && isCorrect == false)
+            || (isSelectedAnswer == false && isCorrect == true)) {
+            stillOk = false;
+        }
+
+        /*
+        if ((isSelectedAnswer  && !isCorrect )
+        || (!isSelectedAnswer && isCorrect)) {
+            stillOk = false;
+        }*/
+        /*
+        if (isSelectedAnswer  !== isCorrect ) {
+            stillOk = false;
+        }
+        */
+       
+       if (stillOk ==='true') {
+           incrementScore(CORRECT_BONUS);
+        }
+        
+        var classToApply;
+        
+        if (choiceCard.classList.contains("selected-answer") && choiceCard.classList.contains("is-correct-answer")) {
+            classToApply = "correct";
+            choiceCard.classList.remove("selected-answer");
+            choiceCard.classList.add(classToApply);
+        } else if(choiceCard.classList.contains("selected-answer") && !choiceCard.classList.contains("is-correct-answer")) {
+            classToApply = "incorrect";
+            choiceCard.classList.remove("selected-answer");
+            choiceCard.classList.add(classToApply);
+        } else if(!choiceCard.classList.contains("selected-answer") && choiceCard.classList.contains("is-correct-answer")) {
+            classToApply = "missing-answer";
+            choiceCard.classList.remove("selected-answer");
+            choiceCard.classList.add(classToApply);
+        }
+    });
+    
+    console.log(stillOk? 'Bravo!':'Au moins 1 réponse est fausse...');
+
+
+}
+
+function cleanChoicesCSS() {
+    choices.forEach(choice => {
+        choice.parentElement.classList.remove("selected-answer");
+        choice.parentElement.classList.remove("correct");
+        choice.parentElement.classList.remove("incorrect");
+        choice.parentElement.classList.remove("missing-answer");
+    });
+};
+
+function cleanValidationCSS() {
+    choices.forEach(choice => {
+        choice.parentElement.classList.remove("correct");
+        choice.parentElement.classList.remove("incorrect");
+        choice.parentElement.classList.remove("missing-answer");
+    });
+};
+
+
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -43,7 +112,7 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-    if(availableQuestions.length==0 || questionCounter >= MAX_QUESTIONS){
+    if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         // Go to the end page
         return window.location.assign('./end.html');
@@ -60,6 +129,10 @@ getNewQuestion = () => {
     choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
+        const correctAnswers = currentQuestion.answer.split(",");
+        if (correctAnswers.includes(number) == true) {
+            choice.parentElement.classList.add("is-correct-answer");
+        }
     });
 
     availableQuestions.splice(questionIndex, 1);
@@ -67,29 +140,44 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
+
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return;
-
-        acceptingAnswers = false;
+        /*        if(!acceptingAnswers) return;
+        
+                acceptingAnswers = false;
+                const selectedAnswer = e.target;
+                const selectedAnswer = selectedChoice.dataset['number'];
+        
+                const classToApply = selectedAnswer == currentQuestion.answer ? 'correct-answer' : 'incorrect-answer';
+                if(classToApply === 'correct'){
+                    incrementScore(CORRECT_BONUS);
+                };
+                selectedChoice.parentElement.classList.add(classToApply);
+                setTimeout( () => {
+                    selectedChoice.parentElement.classList.remove(classToApply);
+                    getNewQuestion();
+                }, 1000);
+        */
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        selectedChoice.parentElement.classList.toggle("selected-answer");
 
-        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-        if(classToApply === 'correct'){
-            incrementScore(CORRECT_BONUS);
-        };
-        selectedChoice.parentElement.classList.add(classToApply);
-        setTimeout( () => {
-            selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
-        }, 1000);
+        //selectedChoice.parentElement.classList.add(classToApply);
 
+        // setTimeout( () => {
+        //     selectedChoice.parentElement.classList.remove(classToApply);
+        //     getNewQuestion();
+        // }, 1000);
+
+    
+        
     });
 });
 
+
+
 incrementScore = num => {
-    score +=num;
+    score += num;
     scoreText.innerText = score;
 };
 

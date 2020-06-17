@@ -25,6 +25,15 @@
     width: 100%;
 }
 
+.selected-answer {
+    background-color: blue;
+    text-decoration-color: white;
+}
+
+.missing-answer {
+    border: 2px solid red;
+}
+
 .correct {
     background-color: #28a745;
 }
