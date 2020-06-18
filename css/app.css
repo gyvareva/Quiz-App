@@ -100,11 +100,17 @@ h3 {
     transition: transform 150ms;
   }
   
+.btn[disabled] {
+    border: 0.1rem solid #56a6ebb9;
+    color: #56a6ebb9;
+    background-color: #ecf5ff;
+}
+
   .btn[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
-  }
+}
 
 /* FORMS */
 form {

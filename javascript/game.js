@@ -82,8 +82,12 @@ function validerReponse() {
      }
 
     console.log(stillOk? 'Bravo!':'Au moins 1 réponse est fausse...');
-    document.getElementById("submit-button").style.visibility = "hidden";
-    document.getElementById("next-question-button").style.visibility = "visible";
+
+    document.getElementById("submit-button").disabled = true;
+    document.getElementById("next-question-button").disabled = false;
+
+    //document.getElementById("submit-button").style.visibility = "hidden";
+    //document.getElementById("next-question-button").style.visibility = "visible";
 
 }
 
@@ -117,8 +121,11 @@ startGame = () => {
 getNewQuestion = () => {
     cleanChoicesCSS();
 
-    document.getElementById("submit-button").style.visibility = "visible";
-    document.getElementById("next-question-button").style.visibility = "invisible";
+    document.getElementById("submit-button").disabled = false;
+    document.getElementById("next-question-button").disabled = true;
+
+    //document.getElementById("submit-button").style.visibility = "visible";
+    //document.getElementById("next-question-button").style.visibility = "hidden";
 
 
     if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
