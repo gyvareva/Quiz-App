@@ -6,20 +6,17 @@
     <title>Mes compétences de stage</title>
     <link rel="stylesheet" href="./css/competences.css">
 </head>
-<body>
+<body onload="init()">
     <div class="flex-center flex-column">
         <div>
             <h1>Mes compétences de stage</h1>
         </div>
         <div id="mesCompetences" class="container-to-do">
-            <input type="text" id="toDoInput" placeholder="Nouvel objectif">
-            <span onclick="nouvelObjectif()" class="btn-add">Ajouter</span>
+            <input type="text" id="todoInput" placeholder="Nouvel objectif">
+            <span onclick="addTodo()" id="addBtn" class="btn-add">Ajouter</span>
         </div>
-        <ul id="myUL">
-            <li>Gaz du sang</li>
-            <li class="checked">Spirométrie</li>
-            <li>Signes de gravité respiratoire</li>
-            <li>Aérosols</li>
+        <ul id="myUl">
+
         </ul>
         <div class="container-to-do">
             <a href="./" class="btn">Accueil</a>
