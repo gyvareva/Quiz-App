@@ -13,9 +13,16 @@
       
     <script src="./libs/qrcode.js"></script>
     <div class="container">
-        <div id="qrcode" class="flex-center flex-column">
+        <div id="qrcode-div" class="flex-center flex-column">
             <script type="text/javascript">
-            new QRCode(document.getElementById("qrcode"), "https://gyvareva.github.io/Quiz-App/");
+                new QRCode("qrcode-div", {
+                    text: "https://gyvareva.github.io/quiz-App/",
+                    width: 200,
+                    height: 200,
+                    colorDark : "#000000",
+                    colorLight : "#ecf5ff",
+                    correctLevel : QRCode.CorrectLevel.L
+                });            
             </script>
             <a href="./" class="btn" style="margin-top: 10rem">Accueil</a>
 
