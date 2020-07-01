@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="./css/competences.css">
 </head>
 <body onload="init()">
-    <div class="flex-center flex-column">
+    <div class="flex-center flex-column container">
         <div>
             <h1>Mes compétences de stage</h1>
+            <div id="mesCompetences" class="container-to-do">
+                <input type="text" id="todoInput" placeholder="Nouvel objectif">
+                <span onclick="addTodo()" id="addBtn" class="btn-add">Ajouter</span>
+            </div>
         </div>
-        <div id="mesCompetences" class="container-to-do">
-            <input type="text" id="todoInput" placeholder="Nouvel objectif">
-            <span onclick="addTodo()" id="addBtn" class="btn-add">Ajouter</span>
-        </div>
-        <ul id="myUl">
-
+        <ul id="myUl" class="max-scroll">
+            
         </ul>
-        <div class="container-to-do">
+        <div class="container-to-do auto">
             <a href="./" class="btn">Accueil</a>
         </div>
     </div>
