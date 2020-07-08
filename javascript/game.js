@@ -124,13 +124,10 @@ getNewQuestion = () => {
     document.getElementById("submit-button").disabled = false;
     document.getElementById("next-question-button").disabled = true;
 
-    //document.getElementById("submit-button").style.visibility = "visible";
-    //document.getElementById("next-question-button").style.visibility = "hidden";
-
 
     if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
-        // Go to the end page
+        // Go to the end page if no more questions available or max number of questions reached
         return window.location.assign('./end.html');
     }
     questionCounter++;
@@ -138,9 +135,9 @@ getNewQuestion = () => {
     //update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length); //sélectionne un index random pour la nouvelle question parmi toutes les questions restantes
+    currentQuestion = availableQuestions[questionIndex]; //sélection de la nouvelle question
+    question.innerText = currentQuestion.question; //affichage de la question sélectionnée
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];
@@ -159,22 +156,6 @@ getNewQuestion = () => {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        /*        if(!acceptingAnswers) return;
-        
-                acceptingAnswers = false;
-                const selectedAnswer = e.target;
-                const selectedAnswer = selectedChoice.dataset['number'];
-        
-                const classToApply = selectedAnswer == currentQuestion.answer ? 'correct-answer' : 'incorrect-answer';
-                if(classToApply === 'correct'){
-                    incrementScore(CORRECT_BONUS);
-                };
-                selectedChoice.parentElement.classList.add(classToApply);
-                setTimeout( () => {
-                    selectedChoice.parentElement.classList.remove(classToApply);
-                    getNewQuestion();
-                }, 1000);
-        */
         const selectedChoice = e.target;
         selectedChoice.parentElement.classList.toggle("selected-answer");
 
