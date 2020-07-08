@@ -1,5 +1,6 @@
-const question = document.getElementById('question');
-const choices = Array.from(document.getElementsByClassName('choice-text'));
+const questionElement = document.getElementById('question');
+var choices = [];
+const answersContainerElement = document.getElementById('answers-container');
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
@@ -36,6 +37,7 @@ const MAX_QUESTIONS = 3; //how many questions does an user get before the game e
 function validerReponse() {
     var stillOk = true;
     cleanValidationCSS();
+    var choices = Array.from(document.getElementsByClassName('choice-text'));
     choices.forEach(choice => {
         var choiceCard = choice.parentElement;
         var isSelectedAnswer = choiceCard.classList.contains("selected-answer");
@@ -85,10 +87,6 @@ function validerReponse() {
 
     document.getElementById("submit-button").disabled = true;
     document.getElementById("next-question-button").disabled = false;
-
-    //document.getElementById("submit-button").style.visibility = "hidden";
-    //document.getElementById("next-question-button").style.visibility = "visible";
-
 }
 
 function cleanChoicesCSS() {
@@ -108,6 +106,13 @@ function cleanValidationCSS() {
     });
 };
 
+function emptyChoices(){
+    var container = document.getElementById('answers-container');
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+}
+
 
 startGame = () => {
     questionCounter = 0;
@@ -119,7 +124,8 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
-    cleanChoicesCSS();
+    //cleanChoicesCSS();
+    emptyChoices();
 
     document.getElementById("submit-button").disabled = false;
     document.getElementById("next-question-button").disabled = true;
@@ -130,37 +136,64 @@ getNewQuestion = () => {
         // Go to the end page if no more questions available or max number of questions reached
         return window.location.assign('./end.html');
     }
+
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     //update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length); //sélectionne un index random pour la nouvelle question parmi toutes les questions restantes
-    currentQuestion = availableQuestions[questionIndex]; //sélection de la nouvelle question
-    question.innerText = currentQuestion.question; //affichage de la question sélectionnée
+    const newQuestionIndex = Math.floor(Math.random() * availableQuestions.length); //sélectionne un index random pour la nouvelle question parmi toutes les questions restantes
+    currentQuestion = availableQuestions[newQuestionIndex]; //sélection de la nouvelle question
+    questionElement.innerText = currentQuestion.question; //affichage de la question sélectionnée
 
-    choices.forEach(choice => {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
-        const correctAnswers = currentQuestion.answer.split(",");
-        if (correctAnswers.includes(number) == true) {
-            choice.parentElement.classList.add("is-correct-answer");
+
+
+    /* créer elements */
+
+    currentQuestion.choices.forEach( choice => {
+
+        var choiceContainerElement = document.createElement('div');
+        
+        var choicePrefixElement = document.createElement('p');
+        choicePrefixElement.classList.add('choice-prefix');
+        choicePrefixElement.innerText = choice.id;
+        
+        var choiceTextElement = document.createElement('p');
+        choiceTextElement.classList.add('choice-text');
+        choiceTextElement.innerText = choice.value;
+        choiceTextElement.addEventListener('click', e => {
+            const selectedChoice = e.target;
+            selectedChoice.parentElement.classList.toggle("selected-answer");
+        });
+
+        if (currentQuestion.answers.includes(choice.id)) {
+            choiceContainerElement.classList.add("is-correct-answer");
         }
+        
+        choiceContainerElement.appendChild(choicePrefixElement);
+        choiceContainerElement.appendChild(choiceTextElement);
+        answersContainerElement.appendChild(choiceContainerElement);
     });
 
-    availableQuestions.splice(questionIndex, 1);
+
+
+    /*****************/
+    
+    // choices.forEach(choice => {
+    //     const number = choice.dataset['number'];
+    //     choice.innerText = currentQuestion['choice' + number];
+    //     const correctAnswers = currentQuestion.answer.split(",");
+    //     if (correctAnswers.includes(number) == true) {
+    //         choice.parentElement.classList.add("is-correct-answer");
+    //     }
+    // });
+
+    choices = Array.from(document.getElementsByClassName('choice-text'));
+    availableQuestions.splice(newQuestionIndex, 1);
 
     acceptingAnswers = true;
 };
 
-
-choices.forEach(choice => {
-    choice.addEventListener('click', e => {
-        const selectedChoice = e.target;
-        selectedChoice.parentElement.classList.toggle("selected-answer");
-
-    });
-});
 
 
 
