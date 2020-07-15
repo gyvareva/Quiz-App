@@ -153,6 +153,7 @@ getNewQuestion = () => {
     currentQuestion.choices.forEach( choice => {
 
         var choiceContainerElement = document.createElement('div');
+        choiceContainerElement.classList.add('choice-container');
         
         var choicePrefixElement = document.createElement('p');
         choicePrefixElement.classList.add('choice-prefix');
