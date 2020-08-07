@@ -11,19 +11,35 @@ function csvtoJSON(csv, separator){
     var lines=csv.split("\n");
   
     var result = [];
+
+    
+    // var headers=lines[0].split(separator);
+    
+    for(var i=0;i<lines.length;i++){
+        var choiceResult = [];
+        
+        var questionObject = {};
+        var currentLineArray=lines[i].split(separator); 
+        //tableau contenant les différents éléments d'une ligne
   
-    var headers=lines[0].split(separator);
-  
-    for(var i=1;i<lines.length;i++){
-  
-        var obj = {};
-        var currentline=lines[i].split(separator);
-  
-        for(var j=0;j<headers.length;j++){
-            obj[headers[j]] = currentline[j];
+
+        for(k=2; k<currentLineArray.length; k++){
+            if (currentLineArray[k] == "") continue;
+
+            var choicesObject = {};
+            choicesObject.id = k-1;
+            choicesObject.value = currentLineArray[k];
+            choiceResult.push(choicesObject);
         }
+
+        questionObject.question = currentLineArray[0];
+        questionObject.answers = currentLineArray[1].trim().split(" ").map(Number);
+        questionObject.choices = choiceResult;
+
+
+            // questionObject[headers[j]] = currentline[j];
   
-        result.push(obj);
+        result.push(questionObject);
   
     }
     
