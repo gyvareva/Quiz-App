@@ -401,7 +401,7 @@
   {
     "question": "Devant un ou plusieurs signes de gravité respiratoire quelle conduite dois-je tenir?",
     "answers": [
-      4
+      3
     ],
     "choices": [
       {
@@ -410,7 +410,7 @@
       },
       {
         "id": 2,
-        "value": "J'arrête tout hors de question de prendre des risques"
+        "value": "J'arrête tout - hors de question de prendre des risques"
       },
       {
         "id": 3,
