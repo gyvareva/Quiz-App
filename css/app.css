@@ -152,6 +152,14 @@ input::placeholder {
     opacity: 50%;
 }
 
+.version-number{
+    position: absolute; 
+    left: 50%;
+    bottom: 10px;
+    opacity: 50%;
+}
+
+
 
 /* BACKOFFICE */
 
