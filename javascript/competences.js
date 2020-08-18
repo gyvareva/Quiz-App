@@ -21,10 +21,34 @@ function initData(){
   arrayTodos = JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY));
   
   if(arrayTodos == null){
-    arrayTodos = [];
-    arrayTodos.push({id:"id01", todoText:"Spirométrie", isComplete: false});
-    arrayTodos.push({id:"id02", todoText:"Gaz du sang", isComplete: true});
-    arrayTodos.push({id:"id03", todoText:"Aérosols", isComplete: false});
+    arrayTodos = [
+      {id:"id01", todoText:"Physiologie : la cage thoracique", isComplete: false},
+      {id:"id02", todoText:"Physiologie : les muscles respiratoires", isComplete: false},
+      {id:"id03", todoText:"Physiologie : l'arbre bronchique", isComplete: false},
+      {id:"id04", todoText:"Physiologie : les indicateurs", isComplete: false},
+      {id:"id05", todoText:"Physiologie : les gaz du sang", isComplete: false},
+      {id:"id06", todoText:"Matériel et techniques : les interfaces à O2", isComplete: false},
+      {id:"id07", todoText:"Matériel et techniques : les aérosols", isComplete: false},
+      {id:"id08", todoText:"Matériel et techniques : cough assist", isComplete: false},
+      {id:"id09", todoText:"Matériel et techniques : alpha 300", isComplete: false},
+      {id:"id10", todoText:"Matériel et techniques : techniques incitatives", isComplete: false},
+      {id:"id11", todoText:"Matériel et techniques : ELPr", isComplete: false},
+      {id:"id12", todoText:"Matériel et techniques : ELTGOL", isComplete: false},
+      {id:"id13", todoText:"Matériel et techniques : EDIC", isComplete: false},
+      {id:"id14", todoText:"Matériel et techniques : AFE", isComplete: false},
+      {id:"id15", todoText:"Matériel et techniques : drainage autogène", isComplete: false},
+      {id:"id16", todoText:"Matériel et techniques : lutte contre l'atélectasie", isComplete: false},
+      {id:"id17", todoText:"Bilan respiratoire", isComplete: false},
+      {id:"id18", todoText:"Pathologie : BPCO", isComplete: false},
+      {id:"id19", todoText:"Pathologie : DDB", isComplete: false},
+      {id:"id20", todoText:"Pathologie : emphysème pulmonaire", isComplete: false},
+      {id:"id21", todoText:"Pathologie : atélectasie", isComplete: false},
+      {id:"id22", todoText:"Pathologie : maladies neuromusculaires dégénératives", isComplete: false},
+      {id:"id23", todoText:"Pathologie : wedge", isComplete: false},
+      {id:"id24", todoText:"Pathologie : lobectomie", isComplete: false},
+      {id:"id25", todoText:"Pathologie : pneumonectomie", isComplete: false},
+      {id:"id26", todoText:"Pathologie : trachéotomie", isComplete: false},
+    ];
     persistData();
   }
   console.log("Data initialized");
