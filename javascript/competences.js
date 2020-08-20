@@ -149,3 +149,13 @@ function addTodo(){
     displayData();
 
 };
+
+/////////////
+
+function clearStorageAndConfirmation(){
+  var confirmation = confirm("Voulez-vous réinitialiser les compétences?");
+  if (confirmation == true){
+    localStorage.removeItem('todosArray');
+    location.reload();
+  };
+};
