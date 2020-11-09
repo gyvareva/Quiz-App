@@ -23,7 +23,7 @@ function csvtoJSON(csv, separator){
         //tableau contenant les différents éléments d'une ligne
   
 
-        for(k=2; k<currentLineArray.length; k++){
+        for(k=3; k<currentLineArray.length; k++){
             if (currentLineArray[k] == "") continue;
 
             var choicesObject = {};
@@ -33,7 +33,8 @@ function csvtoJSON(csv, separator){
         }
 
         questionObject.question = currentLineArray[0];
-        questionObject.answers = currentLineArray[1].trim().split(" ").map(Number);
+        questionObject.level = currentLineArray[1];
+        questionObject.answers = currentLineArray[2].trim().split(" ").map(Number);
         questionObject.choices = choiceResult;
 
 

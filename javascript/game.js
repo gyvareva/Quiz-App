@@ -4,8 +4,14 @@ const answersContainerElement = document.getElementById('answers-container');
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
-const loader = document.getElementById('loader');
-const game = document.getElementById('game');
+//const loader = document.getElementById('loader');
+const gameElement = document.getElementById('game');
+const difficultySelectorElement = document.getElementById('difficultySelector');
+
+
+//CONSTANTS
+const CORRECT_BONUS = 10; //if you get an answer correct, how much is it worth
+const MAX_QUESTIONS = 5; //how many questions does an user get before the game ends
 
 
 let currentQuestion = {};
@@ -13,26 +19,37 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+let difficultyLevel = 0;
 
 let questions = [];
 
-fetch("data/questions.json")
-    .then(res => {
-        return res.json();
-    })
-    .then(loadedQuestions => {
-        console.log(loadedQuestions);
-        questions = loadedQuestions;
-        startGame();
-    })
-    .catch(err => {
-        console.error(err);
-    });
+function setDifficultyLevel(difficultyLevelParam){
+    difficultyLevel = difficultyLevelParam;
+    console.log(difficultyLevel);
+    initializeGame();
+};
 
+function initializeGame(){
+    fetch("data/questions.json")
+        .then(res => {
+            return res.json();
+        })
+        .then(loadedQuestions => {
+            //console.log(loadedQuestions);
+            
+            loadedQuestions.forEach(question => {
+                if(question.level == difficultyLevel){
+                    questions.push(question);
+                }
+            });
+            
+            startGame();
+        })
+        .catch(err => {
+            console.error(err);
+        });
+};
 
-//CONSTANTS
-const CORRECT_BONUS = 10; //if you get an answer correct, how much is it worth
-const MAX_QUESTIONS = 3; //how many questions does an user get before the game ends
 
 function validerReponse() {
     var stillOk = true;
@@ -111,7 +128,7 @@ function emptyChoices(){
     while (container.firstChild) {
         container.removeChild(container.firstChild);
     }
-}
+};
 
 
 startGame = () => {
@@ -119,8 +136,9 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
-    game.classList.remove('hidden');
-    loader.classList.add('hidden');
+    gameElement.classList.remove('hidden');
+    difficultySelectorElement.classList.add('hidden');
+    //loader.classList.add('hidden');
 };
 
 getNewQuestion = () => {
