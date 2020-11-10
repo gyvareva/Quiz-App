@@ -48,10 +48,18 @@ a {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    width: 100%;
+    border: 0.1rem solid #56a5eb;
+    background-color: white;
+    padding: 1rem;
 }
 
 a:hover{
     color: #56a5eb;
+}
+
+a:visited {
+    background-color: rgb(233, 233, 233);
 }
 
 /* UTILITIES */
@@ -111,4 +119,8 @@ a:hover{
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+  }
+
+  .btn:visited {
+      background-color: white;
   }
