@@ -148,11 +148,16 @@ getNewQuestion = () => {
     document.getElementById("submit-button").disabled = false;
     document.getElementById("next-question-button").disabled = true;
 
+    if (availableQuestions.length == 1 || questionCounter == MAX_QUESTIONS-1) {
+
+        document.getElementById("next-question-button").innerText = "Terminer";
+
+    }
 
     if (availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         // Go to the end page if no more questions available or max number of questions reached
-        return window.location.assign('./end.html');
+                return window.location.assign('./end.html');
     }
 
     questionCounter++;
@@ -173,9 +178,9 @@ getNewQuestion = () => {
         var choiceContainerElement = document.createElement('div');
         choiceContainerElement.classList.add('choice-container');
         
-        var choicePrefixElement = document.createElement('p');
-        choicePrefixElement.classList.add('choice-prefix');
-        choicePrefixElement.innerText = choice.id;
+        // var choicePrefixElement = document.createElement('p');
+        // choicePrefixElement.classList.add('choice-prefix');
+        // choicePrefixElement.innerText = choice.id;
         
         var choiceTextElement = document.createElement('p');
         choiceTextElement.classList.add('choice-text');
@@ -189,7 +194,7 @@ getNewQuestion = () => {
             choiceContainerElement.classList.add("is-correct-answer");
         }
         
-        choiceContainerElement.appendChild(choicePrefixElement);
+        // choiceContainerElement.appendChild(choicePrefixElement);
         choiceContainerElement.appendChild(choiceTextElement);
         answersContainerElement.appendChild(choiceContainerElement);
     });

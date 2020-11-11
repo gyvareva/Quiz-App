@@ -26,20 +26,19 @@
 }
 
 .selected-answer {
-    background-color: blue;
-    text-decoration-color: white;
+    background-color: #56a5eb;
 }
 
 .missing-answer {
-    border: 2px solid green;
+    border: 2px solid greenyellow;
 }
 
 .correct {
-    background-color: #28a745;
+    background-color: greenyellow;
 }
 
 .incorrect {
-    background-color: #dc3545;
+    background-color: rgb(248, 53, 53);
 }
 
 /* HUD */
@@ -71,7 +70,7 @@
     width: 0%;
 }
 
-/* LOADER */
+/* LOADER
 
 #loader {
     border: 1.6rem solid white;
@@ -89,5 +88,5 @@
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 

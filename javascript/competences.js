@@ -153,7 +153,7 @@ function addTodo(){
 /////////////
 
 function clearStorageAndConfirmation(){
-  var confirmation = confirm("Voulez-vous réinitialiser les compétences?");
+  var confirmation = confirm("Voulez-vous réinitialiser les compétences? Attention, toute compétence ajoutée manuelement sera supprimée.");
   if (confirmation == true){
     localStorage.removeItem('todosArray');
     location.reload();

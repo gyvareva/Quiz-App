@@ -27,7 +27,7 @@ function csvtoJSON(csv, separator){
             if (currentLineArray[k] == "") continue;
 
             var choicesObject = {};
-            choicesObject.id = k-1;
+            choicesObject.id = k-2;
             choicesObject.value = currentLineArray[k];
             choiceResult.push(choicesObject);
         }
