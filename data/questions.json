@@ -1301,5 +1301,1189 @@
         "value": "Faux"
       }
     ]
+  },
+  {
+    "question": "Que représente la FiO2?",
+    "level": "facile",
+    "answers": [
+      2
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Le débit en O2 délivré au patient"
+      },
+      {
+        "id": 2,
+        "value": "La fraction en dioxygène dans un mélange d'air donné"
+      },
+      {
+        "id": 3,
+        "value": "L'indice de fibrose pulmonaire liée à l'O2"
+      },
+      {
+        "id": 4,
+        "value": "La force inspiratoire nécessaire pour une bonne oxygénation"
+      },
+      {
+        "id": 5,
+        "value": "La fraction d'hémoglobine saturée en oxygène par rapport à l'hémoglobine totale dans le sang"
+      }
+    ]
+  },
+  {
+    "question": "En quelle unité s'exprime une FiO2?",
+    "level": "facile",
+    "answers": [
+      3
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "En cmH2O"
+      },
+      {
+        "id": 2,
+        "value": "En mmHg"
+      },
+      {
+        "id": 3,
+        "value": "En %"
+      },
+      {
+        "id": 4,
+        "value": "En hPa"
+      },
+      {
+        "id": 5,
+        "value": "En bar"
+      },
+      {
+        "id": 6,
+        "value": "En L/min"
+      }
+    ]
+  },
+  {
+    "question": "Quelle est la FiO2 dans l'air ambiant?",
+    "level": "facile",
+    "answers": [
+      1
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "20%"
+      },
+      {
+        "id": 2,
+        "value": "80%"
+      },
+      {
+        "id": 3,
+        "value": "5%"
+      },
+      {
+        "id": 4,
+        "value": "\"43"
+      },
+      {
+        "id": 5,
+        "value": "2%\""
+      }
+    ]
+  },
+  {
+    "question": "Quelle est la FiN2 dans l'air ambiant?",
+    "level": "facile",
+    "answers": [
+      4
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "\"43"
+      },
+      {
+        "id": 2,
+        "value": "2%\""
+      },
+      {
+        "id": 3,
+        "value": "5%"
+      },
+      {
+        "id": 4,
+        "value": "20%"
+      },
+      {
+        "id": 5,
+        "value": "80%"
+      }
+    ]
+  },
+  {
+    "question": "Le cough assist est un instrument :",
+    "level": "moyen",
+    "answers": [
+      2
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "D'aide au drainage bronchique"
+      },
+      {
+        "id": 2,
+        "value": "D'aide à la toux"
+      },
+      {
+        "id": 3,
+        "value": "D'aide à la déglutition"
+      },
+      {
+        "id": 4,
+        "value": "De ventilation"
+      },
+      {
+        "id": 5,
+        "value": "Invasif"
+      },
+      {
+        "id": 6,
+        "value": "Non invasif"
+      }
+    ]
+  },
+  {
+    "question": "Le cough assist est indiqué pour les patients :",
+    "level": "avancé",
+    "answers": [
+      3,
+      4,
+      6
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "DDB"
+      },
+      {
+        "id": 2,
+        "value": "BPCO"
+      },
+      {
+        "id": 3,
+        "value": "Neuromusculaires"
+      },
+      {
+        "id": 4,
+        "value": "Atteints de la mucoviscidose"
+      },
+      {
+        "id": 5,
+        "value": "En post-opératoire d'une chirurgie thoracique"
+      },
+      {
+        "id": 6,
+        "value": "Ayant une toux inefficace"
+      }
+    ]
+  },
+  {
+    "question": "Le cough assist est contre-indiqué en cas de :",
+    "level": "avancé",
+    "answers": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Pneumothorax"
+      },
+      {
+        "id": 2,
+        "value": "BPCO"
+      },
+      {
+        "id": 3,
+        "value": "Toux inefficace"
+      },
+      {
+        "id": 4,
+        "value": "Fractures de côtes"
+      },
+      {
+        "id": 5,
+        "value": "Parenchyme pulmonaire fragile"
+      }
+    ]
+  },
+  {
+    "question": "L'alpha 300 est un instrument :",
+    "level": "moyen",
+    "answers": [
+      1,
+      5,
+      7
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "D'aide au drainage bronchique"
+      },
+      {
+        "id": 2,
+        "value": "D'aide à la toux"
+      },
+      {
+        "id": 3,
+        "value": "D'aide à la déglutition"
+      },
+      {
+        "id": 4,
+        "value": "De ventilation"
+      },
+      {
+        "id": 5,
+        "value": "Hyperinsufflateur"
+      },
+      {
+        "id": 6,
+        "value": "Invasif"
+      },
+      {
+        "id": 7,
+        "value": "Non invasif"
+      }
+    ]
+  },
+  {
+    "question": "L'alpha 300 est indiqué pour :",
+    "level": "avancé",
+    "answers": [
+      2,
+      4,
+      5,
+      6
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Faciliter la résorption des pneumothorax"
+      },
+      {
+        "id": 2,
+        "value": "Lever des atélectasies"
+      },
+      {
+        "id": 3,
+        "value": "Lutter contre l'inflammation bronchique chronique"
+      },
+      {
+        "id": 4,
+        "value": "Les insuffisances diaphragmatiques"
+      },
+      {
+        "id": 5,
+        "value": "Aider au drainage bronchique"
+      },
+      {
+        "id": 6,
+        "value": "Lutter contre certains épanchements"
+      }
+    ]
+  },
+  {
+    "question": "\"Avec l'alpha 300",
+    "level": " l'expiration est :\"",
+    "answers": [
+      null
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "2"
+      },
+      {
+        "id": 2,
+        "value": "Active"
+      },
+      {
+        "id": 3,
+        "value": "Passive"
+      }
+    ]
+  },
+  {
+    "question": "L'épanchement pleural liquidien est :",
+    "level": "facile",
+    "answers": [
+      1,
+      3
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Souvent localisé en position basale"
+      },
+      {
+        "id": 2,
+        "value": "Une hypersécrétion de mucus"
+      },
+      {
+        "id": 3,
+        "value": "Une quantité anormalement élevée de liquide dans l'espace interpleural"
+      },
+      {
+        "id": 4,
+        "value": "Une pathologie respiratoire dans laquelle le mucus est trop liquide"
+      },
+      {
+        "id": 5,
+        "value": "Une anomalie du système vasculaire respiratoire"
+      }
+    ]
+  },
+  {
+    "question": "L'épanchement pleural liquidien peut être d'origine :",
+    "level": "moyen",
+    "answers": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Tabagique"
+      },
+      {
+        "id": 2,
+        "value": "Infectieuse"
+      },
+      {
+        "id": 3,
+        "value": "Mécanique"
+      },
+      {
+        "id": 4,
+        "value": "Cardiaque"
+      },
+      {
+        "id": 5,
+        "value": "Cancéreuse"
+      },
+      {
+        "id": 6,
+        "value": "Génétique"
+      },
+      {
+        "id": 7,
+        "value": "Iatrogène"
+      }
+    ]
+  },
+  {
+    "question": "Un épanchement pleural peut être :",
+    "level": "facile",
+    "answers": [
+      1,
+      2
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Gazeux"
+      },
+      {
+        "id": 2,
+        "value": "Liquidien"
+      },
+      {
+        "id": 3,
+        "value": "Calcifié"
+      },
+      {
+        "id": 4,
+        "value": "Artériel"
+      },
+      {
+        "id": 5,
+        "value": "Digestif"
+      }
+    ]
+  },
+  {
+    "question": "L'épanchement pleural gazeux est :",
+    "level": "facile",
+    "answers": [
+      1,
+      2,
+      3
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "La présence d'air dans la cavité interpleurale"
+      },
+      {
+        "id": 2,
+        "value": "Une contre-indication à la kinésithérapie respiratoire s'il n'est pas drainé"
+      },
+      {
+        "id": 3,
+        "value": "Un pneumothorax"
+      },
+      {
+        "id": 4,
+        "value": "Souvent localisé en position basale"
+      },
+      {
+        "id": 5,
+        "value": "Un synonyme d'emphysème pulmonaire"
+      }
+    ]
+  },
+  {
+    "question": "Une concentration sanguine anormalement évelée en troponines peut être un signe de :",
+    "level": "avancé",
+    "answers": [
+      3
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Ischémie digestive"
+      },
+      {
+        "id": 2,
+        "value": "Gravité respiratoire"
+      },
+      {
+        "id": 3,
+        "value": "Souffrance cardiaque (infarctus)"
+      },
+      {
+        "id": 4,
+        "value": "OAP"
+      },
+      {
+        "id": 5,
+        "value": "Pneumothorax"
+      },
+      {
+        "id": 6,
+        "value": "Embolie pulmonaire"
+      }
+    ]
+  },
+  {
+    "question": "Quelles consignes spécifiques d'une voie d'abord par sternotomie doit-on donner au patient en post-opératoire?",
+    "level": "moyen",
+    "answers": [
+      4,
+      5,
+      6
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "S'hydrater plus que la normale"
+      },
+      {
+        "id": 2,
+        "value": "Eviter de tousser"
+      },
+      {
+        "id": 3,
+        "value": "Impérativement utiliser une potence pour se redresser dans le lit"
+      },
+      {
+        "id": 4,
+        "value": "Croiser les bras pour tousser"
+      },
+      {
+        "id": 5,
+        "value": "\"Eviter à tout prix les contraintes de cisaillement sur son sternum (port de charges lourdes"
+      },
+      {
+        "id": 6,
+        "value": "…)\""
+      },
+      {
+        "id": 7,
+        "value": "Ne pas aller promener son chien en laisse"
+      },
+      {
+        "id": 8,
+        "value": "Ne pas mettre la ceinture de sécurité lors des trajets en voiture (risque de compression du sternum)"
+      }
+    ]
+  },
+  {
+    "question": "Quels gestes sont à éviter dans la prise en charge d'un patient avec une pneumonectomie fraîche?",
+    "level": "avancé",
+    "answers": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Faire tousser le patient"
+      },
+      {
+        "id": 2,
+        "value": "Faire travailler le patient en latérocubitus homolatéral"
+      },
+      {
+        "id": 3,
+        "value": "Faire travailler le patient en latérocubitus controlatéral"
+      },
+      {
+        "id": 4,
+        "value": "Le drainage bronchique"
+      },
+      {
+        "id": 5,
+        "value": "\"Les exercices respiratoires avec une PEP (plent"
+      },
+      {
+        "id": 6,
+        "value": " respirex"
+      },
+      {
+        "id": 7,
+        "value": "…)\""
+      },
+      {
+        "id": 8,
+        "value": "Les aérosols"
+      },
+      {
+        "id": 9,
+        "value": "L'appui thoracique du côté opéré"
+      },
+      {
+        "id": 10,
+        "value": "\"Une reprise précoce de l'activité physique (pédalier"
+      },
+      {
+        "id": 11,
+        "value": "…)\""
+      }
+    ]
+  },
+  {
+    "question": "\"Sur une radiographie",
+    "level": " la couleur noire correspond à une zone :\"",
+    "answers": [
+      null
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "1"
+      },
+      {
+        "id": 2,
+        "value": "Hypodense : c'est de l'air"
+      },
+      {
+        "id": 3,
+        "value": "Hyperdense : c'est du liquide ou un tissu calcifié"
+      },
+      {
+        "id": 4,
+        "value": "Hyperdense : c'est de l'air"
+      },
+      {
+        "id": 5,
+        "value": "Hypodense : c'est du liquide ou un tissu calcifié"
+      }
+    ]
+  },
+  {
+    "question": "\"Sur une radiographie",
+    "level": " la couleur blanche correspond à une zone :\"",
+    "answers": [
+      null
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "2"
+      },
+      {
+        "id": 2,
+        "value": "Hypodense : c'est de l'air"
+      },
+      {
+        "id": 3,
+        "value": "Hyperdense : c'est du liquide ou un tissu calcifié"
+      },
+      {
+        "id": 4,
+        "value": "Hyperdense : c'est de l'air"
+      },
+      {
+        "id": 5,
+        "value": "Hypodense : c'est du liquide ou un tissu calcifié"
+      }
+    ]
+  },
+  {
+    "question": "La ventilation collatérale est :",
+    "level": "moyen",
+    "answers": [
+      4
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Une technique de drainage bronchique manuel"
+      },
+      {
+        "id": 2,
+        "value": "Un autre nom de la ventilation dirigée"
+      },
+      {
+        "id": 3,
+        "value": "Une communication anatomique entre deux lobes d'un même poumon"
+      },
+      {
+        "id": 4,
+        "value": "Une communication anatomique entre deux bronchioles ou deux alvéoles"
+      },
+      {
+        "id": 5,
+        "value": "La présence d'une fuite lors de la ventilation invasive (intubation orotrachéale)"
+      }
+    ]
+  },
+  {
+    "question": "\"Pour favoriser la ventilation collatérale",
+    "level": " il faut :\"",
+    "answers": [
+      null
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "1"
+      },
+      {
+        "id": 2,
+        "value": "Inspirer profondément et lentement"
+      },
+      {
+        "id": 3,
+        "value": "Inspirer profondément et rapidement"
+      },
+      {
+        "id": 4,
+        "value": "Faire une apnée inspiratoire"
+      },
+      {
+        "id": 5,
+        "value": "Expirer profondément lentement"
+      },
+      {
+        "id": 6,
+        "value": "Expirer rapidement et longtemps"
+      }
+    ]
+  },
+  {
+    "question": "Quelles sont les structures anatomiques permettant la ventilation collatérale?",
+    "level": "moyen",
+    "answers": [
+      1,
+      3,
+      6
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Les canaux de Martin"
+      },
+      {
+        "id": 2,
+        "value": "Les pores de Wang"
+      },
+      {
+        "id": 3,
+        "value": "Les canaux de Lambert"
+      },
+      {
+        "id": 4,
+        "value": "Les jonctions serrées interlobulaires"
+      },
+      {
+        "id": 5,
+        "value": "Les fibres élastiques du parenchyme pulmonaire"
+      },
+      {
+        "id": 6,
+        "value": "Les pores de Kohn"
+      },
+      {
+        "id": 7,
+        "value": "Les anneaux cartilagineux (jusqu'à la 16ème division bronchique)"
+      }
+    ]
+  },
+  {
+    "question": "Le/la kinésithérapeute peut donner son aérosol au patient :",
+    "level": "facile",
+    "answers": [
+      4
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Sous supervison infirmière uniquement"
+      },
+      {
+        "id": 2,
+        "value": "\"Non"
+      },
+      {
+        "id": 3,
+        "value": " c'est un acte médical\""
+      },
+      {
+        "id": 4,
+        "value": "\"Oui"
+      },
+      {
+        "id": 5,
+        "value": " toujours\""
+      },
+      {
+        "id": 6,
+        "value": "\"Oui"
+      },
+      {
+        "id": 7,
+        "value": " mais seulement sous couvert d'une prescription si l'aérosol est médicamenteux\""
+      }
+    ]
+  },
+  {
+    "question": "Un aérosol de salbutamol ayant été préparé à l'avance :",
+    "level": "moyen",
+    "answers": [
+      1
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "\"N'est plus efficace"
+      },
+      {
+        "id": 2,
+        "value": " car il se dégrade à la lumière\""
+      },
+      {
+        "id": 3,
+        "value": "Est encore plus efficace (il s'est oxydé au contact de l'air)"
+      },
+      {
+        "id": 4,
+        "value": "A la même efficacité qu'un aérosol fraîchement préparé"
+      },
+      {
+        "id": 5,
+        "value": "\"N'est plus efficace"
+      },
+      {
+        "id": 6,
+        "value": " car il est très volatile est s'est déjà dispersé dans l'air\""
+      }
+    ]
+  },
+  {
+    "question": "Le diaphragme est innervé par :",
+    "level": "facile",
+    "answers": [
+      1
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Le nerf phrénique"
+      },
+      {
+        "id": 2,
+        "value": "Le nerf hypoglosse"
+      },
+      {
+        "id": 3,
+        "value": "Le nerf vague"
+      },
+      {
+        "id": 4,
+        "value": "Le nerf thoracique long"
+      },
+      {
+        "id": 5,
+        "value": "Le nerf diaphragmatique"
+      }
+    ]
+  },
+  {
+    "question": "Combien de lobes composent le poumon droit?",
+    "level": "facile",
+    "answers": [
+      3
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "1"
+      },
+      {
+        "id": 2,
+        "value": "2"
+      },
+      {
+        "id": 3,
+        "value": "3"
+      },
+      {
+        "id": 4,
+        "value": "4"
+      }
+    ]
+  },
+  {
+    "question": "Combien de lobes composent le poumon gauche?",
+    "level": "facile",
+    "answers": [
+      2
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "1"
+      },
+      {
+        "id": 2,
+        "value": "2"
+      },
+      {
+        "id": 3,
+        "value": "3"
+      },
+      {
+        "id": 4,
+        "value": "4"
+      }
+    ]
+  },
+  {
+    "question": "Quelle forme a un diaphragme sain?",
+    "level": "facile",
+    "answers": [
+      2
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Il est plat"
+      },
+      {
+        "id": 2,
+        "value": "Il a deux coupoles : la droite est plus élevée que la gauche"
+      },
+      {
+        "id": 3,
+        "value": "Il a deux coupoles : la gauche est plus élevée que la droite"
+      },
+      {
+        "id": 4,
+        "value": "Il a deux coupoles de hauteurs identiques"
+      }
+    ]
+  },
+  {
+    "question": "Quel organe se situe sous l'hémicoupole diaphragmatique droite?",
+    "level": "facile",
+    "answers": [
+      3
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "La rate"
+      },
+      {
+        "id": 2,
+        "value": "Le colon"
+      },
+      {
+        "id": 3,
+        "value": "Le foie"
+      },
+      {
+        "id": 4,
+        "value": "L'estomac"
+      },
+      {
+        "id": 5,
+        "value": "Les reins"
+      }
+    ]
+  },
+  {
+    "question": "Quel organe se situe sous l'hémicoupole diaphragmatique gauche?",
+    "level": "facile",
+    "answers": [
+      4
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "La rate"
+      },
+      {
+        "id": 2,
+        "value": "Le colon"
+      },
+      {
+        "id": 3,
+        "value": "Le foie"
+      },
+      {
+        "id": 4,
+        "value": "L'estomac"
+      },
+      {
+        "id": 5,
+        "value": "Les reins"
+      }
+    ]
+  },
+  {
+    "question": "Les voies aériennes inférieures sont protégées par des anneaux de cartilage :",
+    "level": "facile",
+    "answers": [
+      3
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Au niveau de la trachée uniquement"
+      },
+      {
+        "id": 2,
+        "value": "Au niveau de la trachée et des bronches souches"
+      },
+      {
+        "id": 3,
+        "value": "Jusqu'à la 16ème division bronchique"
+      },
+      {
+        "id": 4,
+        "value": "Jusqu'aux bronchioles terminales"
+      },
+      {
+        "id": 5,
+        "value": "Pas du tout"
+      }
+    ]
+  },
+  {
+    "question": "Quel est le muscle ou groupe musculaire principal de l'inspiration?",
+    "level": "facile",
+    "answers": [
+      8
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Les muscles abdominaux obliques externes"
+      },
+      {
+        "id": 2,
+        "value": "Les scalènes"
+      },
+      {
+        "id": 3,
+        "value": "Les SCOM"
+      },
+      {
+        "id": 4,
+        "value": "Les intercostaux externes"
+      },
+      {
+        "id": 5,
+        "value": "Les intercostaux internes"
+      },
+      {
+        "id": 6,
+        "value": "Le petit pectoral"
+      },
+      {
+        "id": 7,
+        "value": "Le dentelé antérieur"
+      },
+      {
+        "id": 8,
+        "value": "Le diaphragme"
+      }
+    ]
+  },
+  {
+    "question": "Quels sont les muscles ou groupes musculaires inspirateurs accessoires?",
+    "level": "facile",
+    "answers": [
+      2,
+      3,
+      4,
+      6,
+      7
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "Les muscles abdominaux obliques externes"
+      },
+      {
+        "id": 2,
+        "value": "Les scalènes"
+      },
+      {
+        "id": 3,
+        "value": "Les SCOM"
+      },
+      {
+        "id": 4,
+        "value": "Les intercostaux externes"
+      },
+      {
+        "id": 5,
+        "value": "Les intercostaux internes"
+      },
+      {
+        "id": 6,
+        "value": "Le petit pectoral"
+      },
+      {
+        "id": 7,
+        "value": "Le dentelé antérieur"
+      },
+      {
+        "id": 8,
+        "value": "Le diaphragme"
+      }
+    ]
+  },
+  {
+    "question": "Quels sont les muscles ou groupes musculaires expirateurs accessoires?",
+    "level": "facile",
+    "answers": [
+      1,
+      4
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "L'ensemble des muscles abdominaux"
+      },
+      {
+        "id": 2,
+        "value": "Le muscle abdominal transverse uniquement"
+      },
+      {
+        "id": 3,
+        "value": "Les intercostaux externes"
+      },
+      {
+        "id": 4,
+        "value": "Les intercostaux internes"
+      },
+      {
+        "id": 5,
+        "value": "Le grand pectoral"
+      }
+    ]
+  },
+  {
+    "question": "Qu'est-ce qui permet l'entrée de l'air dans les poumons?",
+    "level": "facile",
+    "answers": [
+      1
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "L'air dans les poumons a une pression plus basse que l'air extérieur"
+      },
+      {
+        "id": 2,
+        "value": "L'air dans les poumons a une pression supérieure à l'air extérieur"
+      }
+    ]
+  },
+  {
+    "question": "Qu'est-ce qui permet la sortie de l'air des poumons?",
+    "level": "facile",
+    "answers": [
+      2
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "L'air dans les poumons a une pression plus basse que l'air extérieur"
+      },
+      {
+        "id": 2,
+        "value": "L'air dans les poumons a une pression supérieure à l'air extérieur"
+      }
+    ]
+  },
+  {
+    "question": "Quelles sont les fonctions principales du nez sur le plan respiratoire?",
+    "level": "facile",
+    "answers": [
+      2,
+      4,
+      5
+    ],
+    "choices": [
+      {
+        "id": 1,
+        "value": "L'odorat"
+      },
+      {
+        "id": 2,
+        "value": "Le réchauffement de l'air inspiré"
+      },
+      {
+        "id": 3,
+        "value": "Le désencombrement bronchique"
+      },
+      {
+        "id": 4,
+        "value": "La filtration de l'air inspiré"
+      },
+      {
+        "id": 5,
+        "value": "L'humidification de l'air inspiré"
+      },
+      {
+        "id": 6,
+        "value": "Assurer une pression intrabronchique suffisante"
+      }
+    ]
   }
 ]
