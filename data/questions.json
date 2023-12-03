@@ -355,7 +355,7 @@
     "question": "Devant un ou plusieurs signes de gravité respiratoire quelle conduite dois-je tenir?",
     "level": "moyen",
     "answers": [
-      4
+      3
     ],
     "choices": [
       {
@@ -1385,11 +1385,11 @@
       },
       {
         "id": 4,
-        "value": "\"43"
+        "value": "43%"
       },
       {
         "id": 5,
-        "value": "2%\""
+        "value": "2%"
       }
     ]
   },
@@ -1402,11 +1402,11 @@
     "choices": [
       {
         "id": 1,
-        "value": "\"43"
+        "value": "43%"
       },
       {
         "id": 2,
-        "value": "2%\""
+        "value": "2%"
       },
       {
         "id": 3,
@@ -2053,27 +2053,15 @@
       },
       {
         "id": 2,
-        "value": "\"Non"
+        "value": "Non c'est un acte médical"
       },
       {
         "id": 3,
-        "value": " c'est un acte médical\""
+        "value": "Oui toujours"
       },
       {
         "id": 4,
-        "value": "\"Oui"
-      },
-      {
-        "id": 5,
-        "value": " toujours\""
-      },
-      {
-        "id": 6,
-        "value": "\"Oui"
-      },
-      {
-        "id": 7,
-        "value": " mais seulement sous couvert d'une prescription si l'aérosol est médicamenteux\""
+        "value": "Oui mais seulement sous couvert d'une prescription si l'aérosol est médicamenteux"
       }
     ]
   },
@@ -2086,27 +2074,19 @@
     "choices": [
       {
         "id": 1,
-        "value": "\"N'est plus efficace"
+        "value": "N'est plus efficace car il se dégrade à la lumière"
       },
       {
         "id": 2,
-        "value": " car il se dégrade à la lumière\""
-      },
-      {
-        "id": 3,
         "value": "Est encore plus efficace (il s'est oxydé au contact de l'air)"
       },
       {
-        "id": 4,
+        "id": 3,
         "value": "A la même efficacité qu'un aérosol fraîchement préparé"
       },
       {
-        "id": 5,
-        "value": "\"N'est plus efficace"
-      },
-      {
-        "id": 6,
-        "value": " car il est très volatile est s'est déjà dispersé dans l'air\""
+        "id": 4,
+        "value": "N'est plus efficace car il est très volatile est s'est déjà dispersé dans l'air"
       }
     ]
   },
