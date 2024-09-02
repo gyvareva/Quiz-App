@@ -153,7 +153,7 @@ input::placeholder {
     opacity: 50%;
 }
 
-.version-number{
+.footer-info{
     position: absolute; 
     left: 50%;
     bottom: 10px;
